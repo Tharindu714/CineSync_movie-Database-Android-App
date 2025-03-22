@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "699967557600",
+    "project_id": "mymemo-82532",
+    "storage_bucket": "mymemo-82532.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699967557600:android:d3913cbee3974936d1e585",
+        "android_client_info": {
+          "package_name": "com.deltacodex.memoryme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgPo77e00M76JMndYVKHQalWkrAP75VQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

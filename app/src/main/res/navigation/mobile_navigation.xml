@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_tvshow">
+
+    <fragment
+        android:id="@+id/nav_tvshow"
+        android:name="com.deltacodex.memoryme.ui.tvshows.tvshowFragment"
+        android:label="@string/menu_tvshow"
+        tools:layout="@layout/fragment_tvshow" />
+
+    <fragment
+        android:id="@+id/nav_anthology"
+        android:name="com.deltacodex.memoryme.ui.anthology.anthologyFragment"
+        android:label="@string/menu_anthology"
+        tools:layout="@layout/fragment_anthology" />
+
+    <fragment
+        android:id="@+id/nav_movie"
+        android:name="com.deltacodex.memoryme.ui.movies.movieFragment"
+        android:label="@string/menu_movies"
+        tools:layout="@layout/fragment_movie" />
+
+  <fragment
+        android:id="@+id/nav_tv_memo"
+        android:name="com.deltacodex.memoryme.ui.Tvshow_Memo.TMemoFragment"
+        android:label="@string/menu_upload_tvshow"
+        tools:layout="@layout/fragment_t_memo" />
+
+    <fragment
+        android:id="@+id/nav_antho_memo"
+        android:name="com.deltacodex.memoryme.ui.anthologyMemo.AMemoFragment"
+        android:label="@string/menu_upload_anthology"
+        tools:layout="@layout/fragment_a_memo" />
+
+    <fragment
+        android:id="@+id/nav_movie_memo"
+        android:name="com.deltacodex.memoryme.ui.movieMemo.MMemoFragment"
+        android:label="@string/menu_upload_movie"
+        tools:layout="@layout/fragment_m_memo" />
+</navigation>

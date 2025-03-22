@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tvshow"
+            android:icon="@drawable/tv"
+            android:title="@string/menu_tvshow" />
+
+        <item
+            android:id="@+id/nav_anthology"
+            android:icon="@drawable/anthology"
+            android:title="@string/menu_anthology" />
+        <item
+            android:id="@+id/nav_movie"
+            android:icon="@drawable/movie"
+            android:title="@string/menu_movies" />
+
+        <item
+            android:id="@+id/nav_tv_memo"
+            android:icon="@drawable/memo"
+            android:title="@string/menu_upload_tvshow" />
+
+        <item
+            android:id="@+id/nav_movie_memo"
+            android:icon="@drawable/memo"
+            android:title="@string/menu_upload_movie" />
+
+        <item
+            android:id="@+id/nav_antho_memo"
+            android:icon="@drawable/memo"
+            android:title="@string/menu_upload_anthology" />
+    </group>
+</menu>

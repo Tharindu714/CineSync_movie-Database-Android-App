@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.Tvshow_Memo.TMemoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp"
+        tools:ignore="WebViewLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <EditText
+                    android:id="@+id/imageUrlInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="Enter Thumb URL" />
+
+                <ImageView
+                    android:id="@+id/tvShowPortrait"
+                    android:layout_width="150dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/tumb"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <EditText
+                    android:id="@+id/landscapeimageUrlInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="Enter Large URL" />
+
+                <!-- Landscape Image -->
+                <ImageView
+                    android:id="@+id/tvShowLandscape"
+                    android:layout_width="match_parent"
+                    android:layout_height="108dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/large"
+                    android:scaleType="centerCrop" />
+
+                <EditText
+                    android:id="@+id/tvShowName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter TV Show Name" />
+
+                <EditText
+                    android:id="@+id/dateWatched"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="When did watch" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- TV Show Description -->
+
+        <EditText
+            android:id="@+id/tvShowDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="top"
+            android:hint="Enter Season's Description"
+            android:inputType="textMultiLine"
+            android:padding="8dp" />
+
+        <!-- Episode Names (Multiline) -->
+        <EditText
+            android:id="@+id/tvShowEpisodes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="top"
+            android:hint="Enter episode names (one per line)"
+            android:inputType="textMultiLine"
+            android:padding="8dp" />
+
+        <!-- My Thoughts -->
+        <EditText
+            android:id="@+id/myThoughts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Write your first thoughts..."
+            android:inputType="textMultiLine"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/trailerLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Youtube trailer Link" />
+
+        <WebView
+            android:id="@+id/videoPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <Button
+            android:id="@+id/uploadTvshowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#512DA8"
+            android:text="Upload Your Memo 🎬"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

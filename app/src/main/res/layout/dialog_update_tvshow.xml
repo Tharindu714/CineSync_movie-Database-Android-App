@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dark_bg"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/ivLargeImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:id="@+id/etThumbUrl"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Thumbnail URL" />
+
+    <EditText
+        android:id="@+id/etLargeUrl"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Large Image URL" />
+
+    <EditText
+        android:id="@+id/etWatchedDate"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="When did you watch?" />
+
+    <EditText
+        android:id="@+id/etYoutubeLink"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="YouTube link" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:text="Update"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+</LinearLayout>
